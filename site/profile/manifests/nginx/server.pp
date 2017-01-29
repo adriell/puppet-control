@@ -1,4 +1,4 @@
 class profile::nginx::server {
-        class{'nginx': }
+	include nginx
 }
 
