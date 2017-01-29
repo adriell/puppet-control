@@ -7,7 +7,7 @@ class profile::nodejs::package{
 	}
 	file {"/opt/packages":
 		ensure 		=> directory,
-		mode 		=> 0644,
+		mode 		=> '0644',
 		owner		=> root,
 		group		=> root,
 	}
