@@ -5,6 +5,12 @@ class profile::nodejs::package{
 		nodejs_dev_package_ensure	=> 'present',
 		npm_package_ensure		=> 'present'
 	}
+	file {"/opt/packages":
+		ensure 		=> directory,
+		mode 		=> 0644,
+		owner		=> root,
+		group		=> root,
+	}
 	nodejs::npm { 'express with options':
  		ensure          => 'present',
   		package         => 'express',
