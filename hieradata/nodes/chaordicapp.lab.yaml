@@ -1,2 +1,2 @@
-nginx::server::server_name: '192.168.10.10'
-nginx::server::app_name: 'app'
+profile::nginx::server::server_name: '192.168.10.10'
+profile::nginx::server::app_name: 'app'
