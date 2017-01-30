@@ -5,7 +5,7 @@ class profile::nodejs::package{
 		nodejs_dev_package_ensure	=> 'present',
 		npm_package_ensure		=> 'present'
 	}
-	file {"/opt/packages":
+	file {"/var/www/html/app":
 		ensure 		=> directory,
 		mode 		=> '0644',
 		owner		=> root,
@@ -15,7 +15,7 @@ class profile::nodejs::package{
  		ensure          => 'present',
   		package         => 'express',
   		install_options => ['--save-dev', '--no-bin-links'],
-  		target          => '/opt/packages',
+  		target          => '/var/www/html/app',
 	}
 	
 }	
