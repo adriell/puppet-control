@@ -14,6 +14,7 @@ mod 'croddy/make'
 mod 'gentoo/portage'
 mod 'puppetlabs/git', '0.4.0'
 mod 'puppetlabs/vcsrepo', '1.3.2'
+mod 'neillturner-pm2', '0.0.8'
 mod 'chaordic/nginx',
 	:git => 'https://gitlab.com/chaordic/nginx.git',
 	:ref => 'master'
