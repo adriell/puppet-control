@@ -1,5 +1,14 @@
 class profile::nginx::server {
+	
+
 	include nginx
+	package{"passenger":
+		ensure => present,
+	}
+	package{"nginx-extras":
+		ensure => present,
+	}
+	
 	$nginx_app_name = hiera('profile::nginx::server::app_name')
         $nginx_server_name = hiera('profile::nginx::server::server_name')
         nginx::server{"$nginx_app_name":
