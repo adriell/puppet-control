@@ -5,6 +5,11 @@ class profile::nodejs::package{
 		nodejs_dev_package_ensure	=> 'present',
 		npm_package_ensure		=> 'present'
 	}
+	package { 'pm2':
+  		ensure   => 'present',
+  		provider => 'npm',
+	}
+
 	file {"/var/www/html/app":
 		ensure 		=> directory,
 		mode 		=> '0644',
