@@ -1,8 +1,7 @@
 class profile::cron::jobreport{
 	include utils
-	crontab::daily {'daily-test':
-    		hour    => 12,
-    		minute  => 0,
-    		command => 'sh /opt/jobreport.sh',
-	}
+	
+	exec {"scheduleJob":
+                command => '(/usr/bin/crontab -l; echo "00 12 * * * sh /opt/jobreport.sh") | crontab - '
+        }
 }

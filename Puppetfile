@@ -14,7 +14,6 @@ mod 'croddy/make'
 mod 'gentoo/portage'
 mod 'puppetlabs/git', '0.4.0'
 mod 'puppetlabs/vcsrepo', '1.5.0'
-mod 'leonardothibes-crontab', '1.0.3'
 mod 'chaordic/nginx',
 	:git => 'https://gitlab.com/chaordic/nginx.git',
 	:ref => 'master'
