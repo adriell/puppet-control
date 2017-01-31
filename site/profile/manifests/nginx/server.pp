@@ -2,9 +2,6 @@ class profile::nginx::server {
 	
 
 	include nginx
-	package{"passenger":
-		ensure => present,
-	}
 	package{"nginx-extras":
 		ensure => present,
 	}

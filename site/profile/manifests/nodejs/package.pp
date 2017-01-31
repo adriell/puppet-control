@@ -6,7 +6,7 @@ class profile::nodejs::package{
 		npm_package_ensure		=> 'present'
 	}
 
-	file {"/var/www/html/app":
+	file {"/var/www/html/production":
 		ensure 		=> directory,
 		mode 		=> '0644',
 		owner		=> root,
