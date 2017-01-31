@@ -1,4 +1,4 @@
-class profile::cront::jobreport{
+class profile::cron::jobreport{
 	include utils
 	crontab::daily {'daily-test':
     		hour    => 12,
