@@ -13,7 +13,7 @@ mod 'puppetlabs/pe_gem'
 mod 'croddy/make'
 mod 'gentoo/portage'
 mod 'puppetlabs/git', '0.4.0'
-mod 'puppetlabs/vcsrepo', '1.5.2'
+mod 'puppetlabs/vcsrepo', '1.5.0'
 mod 'chaordic/nginx',
 	:git => 'https://gitlab.com/chaordic/nginx.git',
 	:ref => 'master'
