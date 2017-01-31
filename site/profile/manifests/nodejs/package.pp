@@ -16,7 +16,7 @@ class profile::nodejs::package{
  		ensure          => 'present',
   		package         => 'express',
   		install_options => ['--save-dev', '--no-bin-links'],
-  		target          => '/var/www/html/app',
+  		target          => '/var/www/html/production',
 	}
 	
 }	
