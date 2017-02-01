@@ -4,7 +4,7 @@ class profile::app::deploy{
         vcsrepo { '/var/www/html/production':
                 ensure   => present,
                 provider => git,
-                source   => 'https://gitlab.com/chaordic/chaordicapp.git',
+                source   => 'https://github.com/adriell/chaordicapp.git',
         }
 
         exec {"startApp":
