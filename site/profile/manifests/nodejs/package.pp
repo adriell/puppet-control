@@ -12,18 +12,12 @@ class profile::nodejs::package{
 		owner		=> root,
 		group		=> root,
 	}
-	file {"/var/www/html/production/source":
-                ensure          => directory,
-                mode            => '0644',
-                owner           => root,
-                group           => root,
-        }
 
 	nodejs::npm { 'express with options':
  		ensure          => 'present',
   		package         => 'express',
   		install_options => ['--save-dev', '--no-bin-links'],
-  		target          => '/var/www/html/production/source',
+  		target          => '/var/www/html/production/',
 	}
 	
 }	
