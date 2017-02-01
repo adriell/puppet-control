@@ -14,9 +14,9 @@ mod 'croddy/make'
 mod 'gentoo/portage'
 mod 'puppetlabs/git', '0.4.0'
 mod 'puppetlabs/vcsrepo', '1.5.0'
-mod 'chaordic/nginx',
-	:git => 'https://gitlab.com/chaordic/nginx.git',
+mod 'adriell/nginx',
+	:git => 'https://github.com/adriell/nginx.git',
 	:ref => 'master'
-mod 'chaordic/utils',
-	:git => 'https://gitlab.com/chaordic/utils.git',
+mod 'adriell/utils',
+	:git => 'https://github.com/adriell/utils.git',
 	:ref => 'master'
