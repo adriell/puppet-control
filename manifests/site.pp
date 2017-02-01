@@ -1,4 +1,4 @@
-node "chaordicapp.lab"{
+node "default"{
 
 	include role::reverseproxy
 	include role::nodejs
